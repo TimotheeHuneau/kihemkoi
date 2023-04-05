@@ -20,16 +20,16 @@
 	/>
 	<table id="table-ingredients">
 		<tr>
-		<th width="25%">Ingrédient</th>
+		<th id="case-ingredient">Ingrédient</th>
 		<?php foreach($listeHumains as $idHumain => $humain): ?>
-			<th width="<?= 75/(count($listeHumains)) ?>%"><?= $humain['nom'] ?></th>
+			<th><?= $humain['nom'] ?></th>
 		<?php endforeach ?>
 		</tr>
 		<?php foreach($aAimeHumain as $idIngredient => $relationIngredient): ?>
 		<tr>
 			<td><?= $relationIngredient['nom'] ?></td>
 			<?php foreach($listeHumains as $idHumain => $humain): ?>
-			<td class="type<?= isset($relationIngredient['aime'][$idHumain]) ? $relationIngredient['aime'][$idHumain] : 0 ?> case" id="c <?= $idHumain . " " . $idIngredient?>">
+			<td class="type<?= isset($relationIngredient['aime'][$idHumain]) ? $relationIngredient['aime'][$idHumain] : '-' ?> case" id="c <?= $idHumain . " " . $idIngredient?>">
 				<div>
 					<?php for($i=-2; $i <= 2; $i++): ?>
 						<input
@@ -40,6 +40,13 @@
 							value="<?= $i ?>"
 						/>
 					<?php endfor ?>
+					<input
+						type="radio"
+						class="type- inputChoixNiveau"
+						name="aime[<?= $idIngredient ?>][<?= $idHumain ?>]"
+						id="i <?= $idIngredient ?> <?= $idHUmain ?>"
+						value="-"
+					/>
 				</div>
 			</td>
 			<?php endforeach ?>

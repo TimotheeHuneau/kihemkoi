@@ -10,13 +10,12 @@ if(isset($_POST['aime'])){
 		foreach($relIngredient as $idHumain => $niveau){
 			$reqVidage = "DELETE FROM Aime WHERE humain = $idHumain AND ingredient = $idIngredient;";
 			mysqli_query($c, $reqVidage);
-			if($niveau != 0){
+			if($niveau != '-'){
 				$reqAime = "INSERT INTO Aime (ingredient, humain, niveau) VALUES ($idIngredient, $idHumain, $niveau);";
 				mysqli_query($c, $reqAime);
 			}
 		}
 	}
-	
 }
 
 //recuperation des recettes

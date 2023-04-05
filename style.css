@@ -42,7 +42,7 @@ p{
 }
 
 #principal{
-	border: 1px var(--couleur-gris-4) solid;
+	border: 0.1em var(--couleur-gris-4) solid;
 	border-top: none;
 	border-bottom: none;
 	padding: 10px;
@@ -58,7 +58,7 @@ p{
 	align-items: center;
 	
 	position: relative;
-	width: 40%;
+	width: 50%;
 }
 
 nav, aside, #principal{
@@ -172,53 +172,23 @@ header a:hover{
 	border-radius: 0px;
 }
 
-#modifs{
-	align-self: flex-end;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-}
-
-#modifs > *{
-	border-radius: 1em;
-	transition: all 0.5s;
-}
-
-#edition, #suppression, #important {
+#important {
 	padding: 0.5em;
 	text-decoration: underline;
 	border: none;
 	margin: 0px;
 	font-family: serif;
 	font-size: 1em;
-}
-
-#edition {
-	background-color: var(--couleur-vert-1);
-	
-}
-
-#edition:hover {
-	color: var(--couleur-vert-1);
-	background-color: var(--couleur-gris-3);
-}
-
-#suppression {
-	background-color: var(--couleur-rouge-1);
-}
-
-#suppression:hover {
-	color: var(--couleur-rouge-1);
-	background-color: var(--couleur-gris-3);
-}
-
-#important{
 	background-color: var(--couleur-principale);
 }
 
 #important:hover {
 	color: var(--couleur-principale);
 	background-color: var(--couleur-gris-3);
+}
+
+#case-indredient {
+	width: 20%;
 }
 
 input{
@@ -279,6 +249,10 @@ td div{
 
 .type2{
 	background-color: var(--couleur-vert-2);
+}
+
+.type- {
+	background-color: var(--couleur-principale);
 }
 
 tr:nth-child(2n+1){
