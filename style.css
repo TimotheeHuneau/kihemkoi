@@ -283,11 +283,6 @@ table{
 	padding:0.5em;
 }
 
-.case.modified {
-	padding: 0em;
-	border: 0.5em var(--couleur-gris-3) solid;
-}
-
 .important{
 	color: var(--couleur-principale);
 	background-color: var(--couleur-gris-3);
