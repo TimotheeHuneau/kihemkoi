@@ -266,10 +266,13 @@ table{
 
 .case div{
 	width: 100%;
+}
+
+.case div * {
 	visibility: hidden;
 }
 
-.case:hover div{
+.case:hover div *{
 	visibility: visible;
 }
 
