@@ -3,11 +3,12 @@
 	<h2>Petit tableau récapitulatif</h2>
 	
 	<table><tr>
-	<td width="20%" class="type-2"><p>Je n'aime pas du tout/n'en mange pas/suis allergique.</p></td>
-	<td width="20%" class="type-1"><p>Je n'aime pas, sauf dans certain cas.</p></td>
-	<td width="20%" class="type0"><p>J'y suis indifférent.</p></td>
-	<td width="20%" class="type1"><p>J'aime bien.</p></td>
-	<td width="20%" class="type2"><p>J'aime beaucoup.</p></td>
+		<td class="type-2"><p>Je n'aime pas du tout/n'en mange pas/suis allergique.</p></td>
+		<td class="type-1"><p>Je n'aime pas, sauf dans certain cas.</p></td>
+		<td class="type0"><p>J'y suis indifférent.</p></td>
+		<td class="type1"><p>J'aime bien.</p></td>
+		<td class="type2"><p>J'aime beaucoup.</p></td>
+		<td class="type-"><p>(Non renseigné)</p></td>
 	</tr></table>
 	
 	<br/>
