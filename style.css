@@ -13,7 +13,7 @@
 
 body{
 	background-color: var(--couleur-gris-1);
-	color: var(--couleur-gris-4);
+	color: var(--couleur-gris-3);
 	margin: 0px;
 	display: flex;
 	flex-direction: column;
