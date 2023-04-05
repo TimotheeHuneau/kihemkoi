@@ -7,7 +7,6 @@
 	--couleur-gris-1: #f8f8f8;
 	--couleur-gris-2: #efefef;
 	--couleur-gris-3: #404040;
-	--couleur-gris-4: #242450;
 	--char-oui: '\25cf';
 	--char-non: '\25cb';
 }
@@ -42,7 +41,7 @@ p{
 }
 
 #principal{
-	border: 0.1em var(--couleur-gris-4) solid;
+	border: 0.1em var(--couleur-gris-3) solid;
 	border-top: none;
 	border-bottom: none;
 	background-color: var(--couleur-gris-2);
@@ -339,4 +338,3 @@ div:hover > span.important{
 		visibility: visible;
 	}
 }
-
