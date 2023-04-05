@@ -185,10 +185,6 @@ header a:hover{
 	background-color: var(--couleur-gris-3);
 }
 
-#case-indredient {
-	width: 20%;
-}
-
 input{
 	cursor: pointer;
 }
