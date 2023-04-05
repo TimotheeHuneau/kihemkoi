@@ -2,12 +2,7 @@
 $c = seConnecter(); 
 
 //recuperation des personnes
-$requeteListePersonnes = "SELECT nom, id FROM Humain ORDER BY nom";
-$resultatListePersonnes = mysqli_query($c, $requeteListePersonnes);
-$listeHumains = [];
-while ($humain = mysqli_fetch_assoc($resultatListePersonnes)){
-	$listeHumains[$humain['id']] = $humain;
-}
+$listeHumains = getAllHumains();
 
 if(isset($_POST['aime'])){
 	$aAime = $_POST['aime'];
